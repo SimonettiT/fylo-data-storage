@@ -1,0 +1,176 @@
+@font-face
+    font-family: 'Raleway'
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap')
+
+body
+    font-family: 'Raleway', sans-serif
+    font-weight: 400
+    width: 100%
+    max-width: 1440px
+    margin: 0
+    padding: 0
+    font-size: 14px
+    background-image: url('../images/bg-mobile.png')
+    background-repeat: no-repeat
+    background-size: cover
+a, p
+    color: #ffffff
+    font-style: none
+    text-decoration: none
+
+.fylo-dashboard
+    margin: auto
+    width: 70%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+
+.fylo-commands
+    width: 350px
+    background-color: hsl(228, 56%, 26%)
+    border-radius: 15px 80px 15px 15px
+    display: inline-block
+    height: 200px
+    min-width: 350px
+
+    .fylo-logo
+        padding-top: 30px
+        display: block
+        margin-left: 30px
+        margin-bottom: 35px
+
+    .commands-list
+        padding-bottom: 40px
+        margin-left: 30px
+
+        .option-command
+            background-color: hsl(229, 57%, 11%)
+            width: 24px
+            height: 24px
+            border-radius: 10px
+            padding: 14px
+            margin-right: 10px
+
+.fylo-info
+    width: 440px
+    min-width: 440px
+    background-color: hsl(228, 56%, 26%)
+    color: #ffffff
+    display: inline-block
+    border-radius: 15px
+    padding: 20px 50px
+    height: 120px
+    margin-left: 25px
+.info-data
+    font-weight: 400
+    color: hsl(243, 100%, 93%)
+    span
+        font-weight: 700
+        color: #ffffff
+        font-size: 16px
+    
+.hotbar-data-used
+    width: 100%
+    height: 30px
+meter::-webkit-meter-bar
+    background: hsl(229, 57%, 11%)
+    padding: 1px
+meter::-webkit-meter-optimum-value
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+    border-radius: 10px
+
+.min-max-data
+    display: block
+    p
+        margin-top: 0
+        font-weight: 700
+        color: hsl(243, 100%, 93%)
+    .min-data
+        float: left
+    .max-data
+        float: right
+.data-left
+    color: hsl(229, 57%, 11%)
+    background-color: #ffffff
+    position: relative
+    width: 200px
+    top: -150px
+    left: 237px
+    border-radius: 15px 15px 0 15px
+    z-index: 1
+    h1, h2
+        display: inline-block
+    h1
+        font-size: 38px
+        margin: 16px 0
+    h2
+        font-weight: 300
+        font-size: 14px
+.data-left::after
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left: 41px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 29px solid white;
+    bottom: -18px;
+    left: 79.7%;
+
+    
+
+.attribution 
+    font-size: 11px
+    text-align: center
+    a
+        color: hsl(228, 45%, 44%)
+
+    
+@media only screen and (max-width: 940px)
+    .fylo-dashboard
+        width: 85%
+        flex-direction: column
+    .fylo-commands
+        margin-bottom: 50px
+        width: 100%
+        max-width: 550px
+        .fylo-logo
+            margin-left: 15%
+        .commands-list
+            margin-left: 15%
+            .option-command
+                margin-right: 15px
+                width: 28px
+                height: 28px
+                padding: 16px
+    .fylo-info
+        width: 80%
+        min-width: 0
+        margin-left: 0
+        .info-data
+            text-align: center
+
+    .data-left
+        border-radius: 15px
+        top: 20px
+        left: 0
+        margin: auto
+        text-align: center
+
+    .data-left::after
+        display: none
+    
+@media only screen and (min-width: 941px)
+    body
+        background-image: none
+        background-color: hsl(229, 57%, 11%)
+    .background-svg
+        width: 100%
+        height: 420px
+        background-repeat: no-repeat
+        background-image: url('../images/bg-desktop.png')
+        z-index: -1
+        position: absolute
+        left: 0
+        bottom: 0
