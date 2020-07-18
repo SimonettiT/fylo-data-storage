@@ -44,6 +44,7 @@ a, p {
   display: inline-block;
   height: 200px;
   min-width: 350px;
+  margin-bottom: 38px;
 }
 
 .fylo-commands .fylo-logo {
