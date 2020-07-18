@@ -70,13 +70,16 @@ a, p {
 .fylo-info {
   width: 440px;
   min-width: 440px;
-  background-color: #1d2c67;
   color: #ffffff;
   display: inline-block;
-  border-radius: 15px;
+  margin-left: 25px;
+}
+
+.content-fylo-info {
   padding: 20px 50px;
   height: 120px;
-  margin-left: 25px;
+  background-color: #1d2c67;
+  border-radius: 15px;
 }
 
 .info-data {
@@ -130,7 +133,7 @@ meter::-webkit-meter-optimum-value {
   position: relative;
   width: 200px;
   top: -150px;
-  left: 237px;
+  left: 138px;
   border-radius: 15px 15px 0 15px;
   z-index: 1;
 }
@@ -182,6 +185,7 @@ meter::-webkit-meter-optimum-value {
     margin-bottom: 50px;
     width: 100%;
     max-width: 550px;
+    min-width: 0;
   }
   .fylo-commands .fylo-logo {
     margin-left: 15%;
@@ -196,11 +200,14 @@ meter::-webkit-meter-optimum-value {
     padding: 16px;
   }
   .fylo-info {
-    width: 80%;
+    width: 100%;
     min-width: 0;
     margin-left: 0;
   }
-  .fylo-info .info-data {
+  .fylo-info .content-fylo-info {
+    padding: 20px 20px;
+  }
+  .fylo-info .content-fylo-info .info-data {
     text-align: center;
   }
   .data-left {
@@ -212,6 +219,20 @@ meter::-webkit-meter-optimum-value {
   }
   .data-left::after {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .fylo-commands .commands-list .option-command {
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .fylo-commands .fylo-logo, .fylo-commands .commands-list {
+    margin-left: 10%;
   }
 }
 
